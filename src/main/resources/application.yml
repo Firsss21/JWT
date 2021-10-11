@@ -1,0 +1,19 @@
+server:
+  port: 8999
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_jwt
+    username: buchi
+    password: 21012000
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
